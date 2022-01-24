@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Javascript Quiz</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Javascript Quiz</h1>
+                <p>Test your knowledge in <strong>Javascript Fundamentals</strong></p>
+            </header>
+            <section>
+                <!--the results will be displayed below the header section on submission of the form. To display results,JS uses the id:"results" and innerHTML adds the results-->
+                <div id="results">
+                </div>
+                
+                
+                <!--the form on submission, returns to the JS function:submitAnswers()-->
+                <form name="quizForm" onsubmit="return submitAnswers()">
+                    <h3>1.Which HTML elements do we put in Javasript code?</h3>
+                    <input type="radio" name="q1" value="a" id="q1a">a. &lt;js&gt;<br>
+                    <input type="radio" name="q1" value="b" id="q1b">b. &lt;script&gt;<br>
+                    <input type="radio" name="q1" value="c" id="q1c">c. &lt;body&gt;<br>
+                    <input type="radio" name="q1" value="d" id="q1d">d. &lt;link&gt;<br>
+                    
+                    <h3>2.Which HTML attribute is used to reference an external Javascript File?</h3>
+                    <input type="radio" name="q2" value="a" id="q2a">a. &lt;src&gt;<br>
+                    <input type="radio" name="q2" value="b" id="q2b">b. &lt;type&gt;<br>
+                    <input type="radio" name="q2" value="c" id="q2c">c. &lt;rel&gt;<br>
+                    <input type="radio" name="q2" value="d" id="q2d">d. &lt;href&gt;<br>
+
+                    <h3>3.How would you write "hello" in an alert box?</h3>
+                    <input type="radio" name="q3" value="a" id="q3a">a. &lt;msg('hello')&gt;<br>
+                    <input type="radio" name="q3" value="b" id="q3b">b. &lt;alertBox("hello")&gt;<br>
+                    <input type="radio" name="q3" value="c" id="q3c">c. &lt;document.write("hello")&gt;<br>
+                    <input type="radio" name="q3" value="d" id="q3d">d. &lt;alert("hello")&gt;<br>
+
+                    <h3>4.Javascript is directly related to the Java programming language</h3>
+                    <input type="radio" name="q4" value="a" id="q4a">a. &lt;True&gt;<br>
+                    <input type="radio" name="q4" value="b" id="q4b">b. &lt;False&gt;<br>
+                    
+                    <br><br>
+
+                    <!-- The HTML <input type=”submit”> is used to define a submit button. It is used to submit all the user value to the form handler. The Form Handler is a server page that activates a script for processing all the input values -->
+                    <input type="submit" value="submit">
+                </form>
+            </section>
+            <footer>
+                <p>Copyright &copy;2022,All rights reserrved</p>
+            </footer>
+        </div>
+        
+    </body>
+
+   
+</html>
